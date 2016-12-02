@@ -1,0 +1,79 @@
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
+body,button,input,select,textarea{font:12px/1.5 "Microsoft YaHei", "微软雅黑", SimSun, "宋体", sans-serif;color: #666;}
+ol,ul{list-style:none}
+a{text-decoration:none}
+fieldset,img{border:0;vertical-align:top;}
+a,input,button,select,textarea{outline:none;text-decoration:none;}
+a,button{cursor:pointer;}
+
+.carouselImg-outerWrap {
+	margin: 20px auto;
+	border: 1px solid #ccc;
+	padding: 0 10px;
+	border-radius: 10px;
+}
+.carouselImg-imgWrap {
+	position: relative;
+}
+.carouselImg-imgWrap li {
+	position: absolute;
+	left: 200px;
+	top: 0;
+}
+.carouselImg-imgWrap li span {
+	font-size: 22px;
+	color: #eaeaea;
+	background-color: rgba(0,0,0,0.4);
+	padding-left: 20px;
+	width: 95%;
+	height: 60px;
+	line-height: 60px;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	left: 1.5%\9;
+	-webkit-transform: translateX(-50%);
+	   -moz-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	     -o-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+
+.carouselImg-imgWrap li img {
+	width: 100%;
+	height: 100%;
+}
+.carouselImg-controllerWarp{
+	opacity: 1;
+	width: 100%;
+	height: 112px;
+	z-index: 100;
+	position: absolute;
+	top:50%;
+	top:30%\9;
+	-webkit-transform: translateY(-50%);
+	   -moz-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	     -o-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+.carouselImg-prev,.carouselImg-next {
+	width: 76px;
+	height: 112px;
+	position: absolute;
+	z-index: 99;
+	font-size:76px;
+	font-weight: bold;
+	line-height:112px;
+	text-align:center;
+	font-family: "SimSun";
+	color:#70A114;
+	text-shadow:1px 2px #fefefe,-1px 2px #fefefe,2px 4px #aaa,-2px 4px #aaa;
+	cursor:pointer;
+}
+.carouselImg-prev {
+	 left: -80px;
+}
+.carouselImg-next {
+	right: -80px;
+}

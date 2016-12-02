@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>carouselImgModule</title>
+	<link rel="stylesheet" href="carouselImg.css">
+</head>
+<body>
+	<div id="go-round-module"></div>
+</body>
+</html>
+<script src="carouselImg.js"></script>
+<script>
+    //创建组件对象
+    var carouselimg = new carouselImg();
+    //设置组件参数
+    carouselimg.data = {
+        picSrc:['img/jp01.jpg','img/jp02.jpg','img/jp03.jpg','img/jp04.jpg','img/jp05.jpg'],
+        picText:['titleText','titleText','titleText','titleText','titleText'],
+        picHref:['javascript:;','javascript:;','javascript:;','javascript:;','javascript:;'],
+        MainPicWidth:400,
+        MainPicHeight:250,
+        playSpeed:1500,
+        showController:true,
+        showText:true,
+        showOuterBorder:true
+    };
+    //组件初始化
+    carouselimg.init('go-round-module');
+    //组件开始运行
+    carouselimg.action();
+</script>
